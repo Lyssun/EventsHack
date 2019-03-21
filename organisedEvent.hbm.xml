@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="eventFB.OrganisedEvent" table="organisedevent">  
+     <id name = "id" type = "int" column = "id">
+     	<generator class="increment"></generator>  
+    </id>  
+            
+      <property name = "name" column = "name" type = "string"/>
+      <property name = "description" column = "description" type = "string"/>
+      <property name = "start_time" column = "start_time" type = "timestamp"/> 
+      <property name = "lieu" column = "lieu" type = "string"/>
+      <property name = "latitude" column = "latitude" type = "float"/>
+      <property name = "longitude" column = "longitude" type = "float"/> 
+      <property name = "organisation" column = "organisation" type = "string"/>
+      <property name = "image" column = "image" type = "string"/>
+      <property name = "href" column = "href" type = "string"/> 
+      <property name = "source" column = "source" type = "string"/>
+      <property name = "categorie" column = "categorie" type = "string"/>
+      <property name = "ville" column = "ville" type = "string"/> 
+  </class>  
+            
+ </hibernate-mapping>
